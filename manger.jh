@@ -18,6 +18,12 @@ entity Digestion {
        EtreEnRetard String required
 }
 
+entity Dodo {
+      Reflechir String
+      Tourner String
+      Tard String 
+}
+
 relationship ManyToOne {
        Test to Jaifaim
 }
@@ -25,4 +31,8 @@ relationship ManyToOne {
 
 relationship OneToMany {
       Jaifaim to Digestion
+}
+
+relationship OneToMany {
+     Digestion to Dodo
 }
