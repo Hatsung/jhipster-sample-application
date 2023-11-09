@@ -1,0 +1,28 @@
+
+
+
+entity Test {
+    nom String 
+    NumeroDeTelephone String
+}
+
+entity Jaifaim {
+    PetitDej String
+    Manger String
+    Encore String
+}
+
+entity Digestion {
+       Fatigue String required 
+       Dodo String required
+       EtreEnRetard String required
+}
+
+relationship ManyToOne {
+       Test to Jaifaim
+}
+
+
+relationship OneToMany {
+      Jaifaim to Digestion
+}
